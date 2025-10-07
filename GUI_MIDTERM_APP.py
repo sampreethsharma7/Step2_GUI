@@ -6,8 +6,8 @@ from sklearn.preprocessing import StandardScaler
 import joblib   
 import matplotlib.pyplot as plt
 
-model = joblib.load('C:/Users/indarapu/Desktop/PythonCode/MidTerm_GUI/xgb_multioutput_model_GUI_compressed.pkl')
-scaler = joblib.load('C:/Users/indarapu/Desktop/PythonCode/MidTerm_GUI/scaler.pkl')  # Load the scaler used during training
+model = joblib.load('xgb_multioutput_model_GUI_compressed.pkl')
+scaler = joblib.load('scaler.pkl')  # Load the scaler used during training
 st.title("XGBoost Model Prediction GUI")
 st.write("Enter the design parameters to get the predicted S21 values.")
 # Define input fields for design parameters
