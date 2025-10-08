@@ -26,7 +26,8 @@ input_data = pd.DataFrame({
 })
 
 #Displaying a CAD model picture
-st.image("/mount/src/step2_gui/CAD_model.png", caption="CAD Model", use_column_width=True)
+st.subheader("CAD Model used for training")
+st.image("/mount/src/step2_gui/CAD_model.png", caption="CAD Model", use_container_width=True)
 
 input_data_scaled = scaler.transform(input_data)
 st.write("Scaled Input Data:")
