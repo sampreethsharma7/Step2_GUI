@@ -24,6 +24,10 @@ input_data = pd.DataFrame({
     'Stick_W': [Stick_W],
     'Stick_L': [Stick_L]
 })
+
+#Displaying a CAD model picture
+st.image("/mount/src/step2_gui/CAD_model.png", caption="CAD Model", use_column_width=True)
+
 input_data_scaled = scaler.transform(input_data)
 st.write("Scaled Input Data:")
 st.write(scaler.transform([input_data.iloc[0]]))  # Display the scaled input data]))
